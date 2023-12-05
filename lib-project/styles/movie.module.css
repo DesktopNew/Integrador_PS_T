@@ -1,6 +1,30 @@
 
 .container {
-    padding: 3%;
     color: white;
     font-size: 25px;
+}
+
+.page {
+    background-color: darkblue;
+    margin-left: 6%;
+    margin-right: 6%;
+    height: 100vh;
+    padding: 3%;
+}
+
+.movieImage {
+    height: 40%;
+    width: 30%;
+    border-radius: 30px;
+    margin-left: 30%;
+    margin-bottom: 5%;
+}
+
+.field {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 2%;
+    border: black 0.1rem solid;
 }

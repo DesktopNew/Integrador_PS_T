@@ -33,12 +33,19 @@ export async function signIn(login:string, password:string) {
     try {
         const userByEmail = await findUserLoginByEmail(login, password);
         const userByUsername = await findUserLoginByUsername(login, password);
+        var email;
 
         if ( userByEmail == undefined && userByUsername == undefined) {
             return { message: "Invalid Login or Password" };
         }
 
-        const _token = generateToken(login);
+        if ( userByEmail != undefined ) {
+            email = userByEmail.email;
+        } else{
+            email = userByUsername?.email;
+        }
+
+        const _token = generateToken(email);
 
         return { token: _token };
 

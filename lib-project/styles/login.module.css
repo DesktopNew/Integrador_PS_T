@@ -1,12 +1,12 @@
 
 .formulario {
-    background-color: rgb(214, 214, 214);
+    background-color: rgb(255, 255, 255);
     height: 20rem;
     width: 25rem;
     margin-left: 30%;
     margin-top: 12%;
     text-align: center;
-    border: white 0.2rem solid;
+    border: dimgrey 0.2rem solid;
     border-radius: 12px;
 }
 
@@ -19,11 +19,11 @@
 }
 
 .form_btn {
-    background-color: rgb(255, 107, 107);
-    color: white;
+    background-color: rgb(255, 0, 0);
+    color: aliceblue;
     width: 50%;
     margin-top: 5%;
-    border: gray 0.1rem solid;
+    border: rgb(0, 0, 0) 0.1rem solid;
     border-radius: 15px;
 }
 

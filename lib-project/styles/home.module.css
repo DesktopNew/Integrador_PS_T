@@ -10,9 +10,9 @@
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    border: 0.15rem solid rgb(196, 16, 16);
+    border: 0.15rem solid rgb(255, 0, 0);
     border-radius: 15px;
-    color:white ;
+    color:aliceblue ;
     float: right;
     margin-top: 15px;
     margin-right: 20px;
@@ -24,7 +24,7 @@
 }
 
 .container {
-    background-color: rgba(0, 0, 0, 0.26);
+    background-color: dimgray;
     width: 80vw;
     height: 90vh;
     margin-left: 10%;
@@ -44,5 +44,5 @@
 }
 
 .card:hover{
-    background-color: rgb(197, 197, 197);
+    background-color: rgb(255, 215, 0);
 }
