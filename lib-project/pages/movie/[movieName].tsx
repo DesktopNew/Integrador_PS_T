@@ -1,7 +1,6 @@
 import styles from "@/styles/movie.module.css";
 import { useRouter } from "next/router";
 import { useEffect , useState } from "react";
-import imageMovie from "@/public/imageMovie/error.404.avif";
 
 export default function page({ movieName }:any) {
 
@@ -35,21 +34,46 @@ export default function page({ movieName }:any) {
                 
             {movie != undefined ? 
             
+
             <div>
                 <img src="{imageMovie.src}" className="{styles.movieImage}"/>
 
-                <p>Filme Encontrado.</p>
-                <p>O Nome do Filme é {movie.name}</p>
-                <p>A Data de Lançamento é: {movie.releaseDatagh}</p>
+                <p className={styles.field}>Filme Encontrado.</p>
+                <p className={styles.field}>O Nome do Filme é {movie.name}</p>
+                <p className={styles.field}>A Data de Lançamento é: {movie.releaseDatagh}</p>
+
+
+            <div className={styles.ratingBox}>
+                <textarea className={styles.ratingComment} placeholder="Digite o seu Comentário aqui"></textarea>
+
+
+                <select className={styles.ratingValue}>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+                <button className={styles.ratingButton}>Enviar</button>
 
             </div>
 
-            :
+
+
+
+
+            </div>
+
+                :
 
             <div>
                 <p>Filme Não Encontrado</p>
             </div>
+
         }   
+        </div>
         </main>
     );
 }
