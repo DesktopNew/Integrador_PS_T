@@ -70,6 +70,10 @@
     border: aliceblue 0.1rem solid;
 }
 
+.ratingComment:focus {
+    animation: resizeComment 1s forwards;
+}
+
 @keyframes resizeComment{
     from {
         height: 10vw;
